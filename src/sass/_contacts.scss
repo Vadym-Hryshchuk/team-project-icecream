@@ -1,1 +1,110 @@
-// Стили секции Contacts
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+p{
+    margin: 0;
+}
+
+.container-contact{
+  
+    background-color: #ffffff;
+    margin: 0 50px;
+  
+    padding: 43px 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 8px 30px rgba(212, 20, 67, 0.1);
+border-radius: 24px;
+margin-top: 20px;
+}
+
+
+.name-institution{
+    width: 100px;
+    background-color: #F0D1A5;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+   
+   
+}
+.container-city{
+    display: flex;
+    flex-direction: column;
+}
+.container-city::after{
+    content: "";
+    width: 179px;
+  
+    border: 1px solid #E1E1E1;
+    margin-top: 25px;
+
+
+}
+.name-h3{
+    font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 186%;
+
+letter-spacing: 0.04em;
+
+color: #000000;
+}
+
+.span-text{
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #907E82;
+    padding-top: 10px;
+}
+
+.schedule-work{
+    margin-top: 50px;
+
+
+    &__list:last-child{
+    padding-top: 10px;
+
+    }
+
+     &__time{
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        color: #FFA5BA;
+}
+}
+
+.container-navigation{
+    margin-top: 50px;
+
+    &__list{
+        font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+/* or 150% */
+
+
+color: #907E82;
+    }
+}
+
+.foodtruck{
+    width: 130px;
+    background-color: #C2E297;
+    padding: 0 15px;
+}
