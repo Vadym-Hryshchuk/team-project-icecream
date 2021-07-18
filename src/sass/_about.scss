@@ -4,19 +4,41 @@
   background-color: $alt-section-bgc;
   background-image: url('../images/about/sectionbgmob1x.png');
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center bottom 8%;
   background-size: contain;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/about/sectionbgmob2x.png');
   }
   @media screen and(min-width:$tablet-size) {
     background-image: none;
+    padding-top: 130px;
+    padding-bottom: 56px;
   }
   @media screen and(min-width:$desktop-size) {
     background-image: url('../images/about/sectionbgdesk1x.png');
+    background-size: 1280px 534px;
+    background-position: bottom;
+    padding-top: 125px;
+    padding-bottom: 39px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/about/sectionbgdesk2x.png');
     }
+  }
+}
+.about__pretitle {
+  margin-bottom: 15px;
+  @media screen and(min-width:$tablet-size) {
+    margin-bottom: 16px;
+  }
+}
+.about__title {
+  margin-top: 0;
+  margin-bottom: 26px;
+  @media screen and(min-width:$tablet-size) {
+    margin-bottom: 50px;
+  }
+  @media screen and(min-width:$desktop-size) {
+    margin-bottom: 55px;
   }
 }
 .about__cover {
@@ -24,6 +46,50 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 17px;
+  }
+  @media screen and(min-width:$desktop-size) {
+    gap: 74px;
+  }
+}
+.about__img {
+  margin-bottom: 46px;
+  @media screen and(min-width:$tablet-size) {
+    margin-bottom: 0;
+  }
+}
+.about__wrapper {
+  width: 69vw;
+  margin: 0 auto;
+  @media screen and(min-width:$tablet-size) {
+    width: 340px;
+    margin: 0;
+    padding-top: 50px;
+  }
+  @media screen and(min-width:$desktop-size) {
+    width: 463px;
+  }
+}
+.about__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  margin-bottom: 30px;
+  @media screen and(min-width:$tablet-size) {
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  @media screen and(min-width:$desktop-size) {
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+}
+.about__text--grey {
+  color: $alt-text-color;
+  margin-bottom: 20px;
+  @media screen and(min-width:$desktop-size) {
+    margin-bottom: 35px;
+    font-size: 14px;
   }
 }
 .about__button {
@@ -53,5 +119,11 @@
   &:hover,
   &:focus {
     background-color: $button-hover-alt-bgc-color;
+  }
+  @media screen and(min-width:$tablet-size) {
+    margin-top: 42px;
+  }
+  @media screen and(min-width:$desktop-size) {
+    margin-top: 0;
   }
 }
