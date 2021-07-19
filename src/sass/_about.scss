@@ -9,6 +9,9 @@
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/about/sectionbgmob2x.png');
   }
+  @media screen and(min-width:$mobile-size) {
+    background-size: 480px;
+  }
   @media screen and(min-width:$tablet-size) {
     background-image: none;
     padding-top: 130px;
@@ -60,6 +63,9 @@
 .about__wrapper {
   width: 69vw;
   margin: 0 auto;
+  @media screen and(min-width:$mobile-size) {
+    width: 332px;
+  }
   @media screen and(min-width:$tablet-size) {
     width: 340px;
     margin: 0;
@@ -75,6 +81,9 @@
   font-size: 12px;
   line-height: 1.62;
   margin-bottom: 30px;
+  @media screen and(min-width:$mobile-size) {
+    font-size: 13px;
+  }
   @media screen and(min-width:$tablet-size) {
     font-size: 14px;
     line-height: 1.76;
@@ -92,11 +101,21 @@
     font-size: 14px;
   }
 }
+.about__form {
+  position: relative;
+  display: block;
+  margin-bottom: 74px;
+}
 .about__button {
+  position: absolute;
+  left: 0;
+  top: 110%;
+  display: inline-block;
   width: 176px;
   height: 44px;
-  padding-left: 37px;
-  padding-right: 37px;
+  padding-left: 33px;
+  padding-right: 35px;
+  padding-top: 12px;
   background-color: $body-bgc;
   border-radius: 22px;
   border: none;
@@ -121,9 +140,21 @@
     background-color: $button-hover-alt-bgc-color;
   }
   @media screen and(min-width:$tablet-size) {
-    margin-top: 42px;
+    margin-top: 20px;
+    top: 100%;
   }
   @media screen and(min-width:$desktop-size) {
-    margin-top: 0;
+    margin-top: 10px;
   }
+}
+.hide {
+  display: none;
+}
+
+.hide + .about__button ~ .about__text-hidden {
+  display: none;
+}
+.hide:checked + .about__button + .about__text-hidden {
+  display: block;
+  margin-bottom: 64px;
 }
