@@ -20,9 +20,12 @@
   }
 }
 .advantages__item {
-  width: 230px;
+  width: 72vw;
   &:not(:last-child) {
     margin-bottom: 38px;
+  }
+  @media screen and(min-width:$mobile-size) {
+    width: 345px;
   }
   @media screen and(min-width:$tablet-size) {
     width: 180px;
@@ -45,6 +48,9 @@
 
   color: $accent-text-color;
   margin-bottom: 20px;
+  @media screen and(min-width:$mobile-size) {
+    font-size: 40px;
+  }
   @media screen and(min-width:$tablet-size) {
     font-size: 48px;
   }
@@ -85,6 +91,9 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 1.7;
+  @media screen and(min-width:$mobile-size) {
+    font-size: 13px;
+  }
   @media screen and(min-width:$tablet-size) {
     font-size: 14px;
   }
