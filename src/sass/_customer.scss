@@ -154,7 +154,7 @@
     background-position: left, center, right;
     background-repeat: no-repeat;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet-size) {
       top: -19px;
     }
   }
