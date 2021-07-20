@@ -14,12 +14,12 @@
 
   margin-top: 31px;
   margin-bottom: 98px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-size) {
     flex-direction: row;
     margin-top: 39px;
     margin-bottom: 112px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop-size) {
     margin-top: 49px;
     margin-bottom: 119px;
   }
@@ -29,13 +29,13 @@
   &:not(:last-child) {
     margin-bottom: 17px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-size) {
     &:not(:last-child) {
       margin-right: 20px;
       margin-bottom: 0px;
     }
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop-size) {
     &:not(:last-child) {
       margin-right: 30px;
     }
@@ -46,11 +46,11 @@
 
   margin-top: 144px;
   width: 280px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-size) {
     width: 220px;
     margin-top: 150px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop-size) {
     width: 330px;
     margin-top: 210px;
   }
@@ -78,7 +78,7 @@
     margin-left: 16px;
     margin-top: 31px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-size) {
     &::before {
       content: '';
       width: 220px;
@@ -88,7 +88,7 @@
       margin-top: 39px;
     }
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop-size) {
     &::before {
       content: '';
       width: 335px;
@@ -106,14 +106,14 @@
     margin-left: 16px;
     margin-top: 31px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-size) {
     &::before {
       content: url(/images/products-img/ice-coffee-tablet.png);
       margin-left: 0px;
       margin-top: 39px;
     }
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop-size) {
     &::before {
       content: url(/images/products-img/ice-coffee-dekstop.png);
       margin-top: 0px;
@@ -128,14 +128,14 @@
     margin-left: 16px;
     margin-top: 31px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-size) {
     &::before {
       content: url(/images/products-img/milkshakes-tablet.png);
       margin-left: 0px;
       margin-top: 39px;
     }
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop-size) {
     &::before {
       content: url(/images/products-img/milkshakes-dekstop.png);
       margin-top: 0px;
@@ -153,10 +153,10 @@
   text-transform: uppercase;
   color: $secondary-text-color;
   padding-top: 161px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-size) {
     padding-top: 152px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop-size) {
     padding-top: 163px;
   }
 }
@@ -188,12 +188,12 @@
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-size) {
     margin-bottom: 40px;
     width: 198px;
     line-height: 176%;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop-size) {
     margin-bottom: 62px;
     width: 241px;
     font-size: 16px;
@@ -203,10 +203,10 @@
 .products__button {
   border-style: none;
   margin-bottom: 41px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-size) {
     margin-bottom: 40px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop-size) {
     margin-bottom: 50px;
   }
   &--pink {
