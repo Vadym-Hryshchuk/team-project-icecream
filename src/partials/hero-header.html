@@ -11,9 +11,9 @@
 
         <li>
           <ul class="header__desktop-menu">
-            <li><a href="" class="header__link">Home</a></li>
-            <li><a href="" class="header__link">About us</a></li>
-            <li><a href="" class="header__link">How it’s made?</a></li>
+            <li><a href="./index.html" class="header__link">Home</a></li>
+            <li><a href="#products" class="header__link">About us</a></li>
+            <li><a href="#how-it`s-made" class="header__link">How it’s made?</a></li>
             <li><a href="" class="header__link">Our products</a></li>
             <li><a href="" class="header__link">Contact</a></li>
           </ul>
@@ -35,7 +35,9 @@
         <a href="" class="hero__link hero__link--products" title="Products">Products</a>
       </li>
       <li class="hero__button-item">
-        <a href="" class="hero__link hero__link--howmade" title="How it’s made?">How it’s made?</a>
+        <a href="#how-it`s-made" class="hero__link hero__link--howmade" title="How it’s made?"
+          >How it’s made?</a
+        >
       </li>
     </ul>
 
@@ -136,13 +138,13 @@
         <button type="button" class="header__button header__button--static">Buy now</button>
       </li>
       <li class="header-nav__item">
-        <a href="" class="header-nav__link">Home</a>
+        <a href="./index.html" class="header-nav__link">Home</a>
       </li>
       <li class="header-nav__item">
         <a href="" class="header-nav__link">About us</a>
       </li>
       <li class="header-nav__item">
-        <a href="" class="header-nav__link">How it’s made?</a>
+        <a href="#how-it`s-made" class="header-nav__link">How it’s made?</a>
       </li>
       <li class="header-nav__item">
         <a href="" class="header-nav__link">Our products</a>
@@ -153,8 +155,39 @@
     </ul>
   </nav>
 </div>
-<!-- JS -->
 
+<!-- fixed team button -->
+
+<button type="button" class="header__team" data-modal-open>Team</button>
+
+<!-- modal window -->
+
+<!-- Модальное окно-->
+<div class="backdrop backdrop--hidden" data-modal>
+  <div class="modal">
+    <div class="modal__content">
+      <button type="button" class="modal__button--close" data-modal-close>
+        <svg class="modal__icon--close">
+          <use href="./images/hero/icons.svg#cross"></use>
+        </svg>
+      </button>
+    </div>
+    <h2 class="modal__title">cast:</h2>
+    <ul>
+      <li>Team Lead:</li>
+      <li>Вадим Грищук</li>
+      <li>Scrum Master:</li>
+      <li>Ярина Лобода</li>
+      <li>Developers:</li>
+      <li>Юрий Кужиль</li>
+      <li>Данило Машманюк</li>
+      <li>Светлана Жованик</li>
+      <li>Владислав Деркач</li>
+    </ul>
+  </div>
+</div>
+
+<!-- JS -->
 <script
   defer
   src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -162,3 +195,4 @@
   crossorigin="anonymous"
 ></script>
 <script defer src="js/mobile-menu.js"></script>
+<script defer src="js/modal.js"></script>
