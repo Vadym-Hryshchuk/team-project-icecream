@@ -1,4 +1,6 @@
-// Стили секции Footer
+.footer {
+  background: #FFF5F6;
+}
 .footer-wrapper-title{
   display: flex;
   flex-direction: column;
@@ -7,6 +9,11 @@
     width: 234px;
     
   }
+  @media screen and (min-width: $desktop-size){
+    width: 600px;
+  }
+
+  
 }
 .footer-pretitle{
     font-family: $font-family-title;
@@ -52,30 +59,18 @@ margin-top: 165px;
         margin-top: 15px;
     }
 }
-// .footer-wrapper{
-//   display: flex;
-//   flex-direction: column;
-  
-//   @media screen and (max-width: $desktop-size) {
-//     width: 234px;
-    
-//   }
-// }
-
 
 .footer-list{
   display: flex;
-  justify-content: space-between;
-  width: 152px;
+  justify-content: flex-end;
+  padding-top: 43px;
   }
+.footer-item:not(:last-child){
+  margin-right: 25px;
+}
 
 .footer-icon{
-  // width: 32px;
-  // height: 32px;
-  fill: #fff;
-  // background-color: $accent-alt-text-color;
-  
- 
+fill: #fff;
 }
 .footer-list__icon{
   display: flex;
@@ -90,6 +85,7 @@ margin-top: 165px;
   background-color: $button-hover-bgc-color;
 }
 .footer-contact{
+  padding-top: 45px;
   font-family: $font-family;
   font-style: normal;
   font-weight: bold;
@@ -99,6 +95,9 @@ margin-top: 165px;
   text-align: right;
   
   color: $primary-text-color;
+  
+
+
   @media screen and (min-width:$tablet-size) {
     font-size: 14px;
     line-height: 26px;
@@ -114,7 +113,7 @@ margin-top: 165px;
   font-weight: bold;
   font-size: 12px;
   line-height: 186%;
- 
+
   text-align: right;
   
   color: $accent-text-color;
@@ -128,6 +127,7 @@ margin-top: 165px;
 }
 }
 .rights{
+
   font-family: $font-family;
   font-style: normal;
   font-weight: bold;
@@ -136,4 +136,26 @@ margin-top: 165px;
   letter-spacing: 0.02em;
   
   color: $alt-text-color;
+text-align: center;
+width: 150px;
+padding-top: 22px;
+padding-bottom: 25px;
+margin: 0 auto;
+@media screen and (min-width:$tablet-size){
+  width: 276px;
+}
   }
+.border-top{
+  border-top: 1px solid #E1E1E1;
+  margin-top: 43px;
+  @media screen and (min-width:$tablet-size){
+    margin-top: 91px;
+  }
+}
+  .flex-tablet{
+    @media screen and (min-width:$tablet-size) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}

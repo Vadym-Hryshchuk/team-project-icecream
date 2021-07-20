@@ -10,7 +10,34 @@ a {
 p {
   margin: 0;
 }
+.contact{
+  background: 
+    linear-gradient(
+      to bottom,
+      white 15%,
+      #FFF5F6 15%,
+     
+    
+    )
 
+  
+}
+@media screen and (min-width: 1280px){
+  .contact{
+    
+    background-image: url(../images/footer/sectionbg2.png),
+    linear-gradient(
+      to bottom,
+      white 15%,
+      #FFF5F6 15%);
+    
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+  }
+}
 .container-contact {
   background-color: #ffffff;
   margin: 0 50px;
@@ -19,18 +46,21 @@ p {
   border-radius: 24px;
   margin-top: 20px;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 220px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1270px) {
+ 
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-right: 20px;
     margin-left: 0;
     padding-left: 31px;
     padding-right: 45px;
     width: 220px;
   }
+  @media screen and (min-width: 1280px){
+width:330px;
+padding-left: 43px;
+padding-right: 44px;
+margin-left: 0;
+margin-right: 30px;
+}
 }
 @media screen and (min-width: 768px) and (max-width: 1270px) {
   .container-contact:nth-child(3n) {
@@ -52,6 +82,8 @@ p {
   line-height: 186%;
   letter-spacing: 0.04em;
   color: #ffffff;
+
+  
 }
 .container-city {
   display: flex;
@@ -196,11 +228,19 @@ p {
     content: '';
     background-image: url(../images/contackt-img/galo4ka-red.png);
   }
+  &:hover{
+    background-color: #ECEBEB;
+  }
 }
 
 .tablet-desktop {
   @media screen and (min-width: 768px) {
     display: flex;
+  }
+  @media screen and (min-width: 1280px){
+    
+    
+
   }
 }
 .tablet-desktop-buton {
