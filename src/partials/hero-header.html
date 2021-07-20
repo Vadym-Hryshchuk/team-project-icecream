@@ -1,1 +1,123 @@
-this is text from hero-header.html
+<div class="header-hero__container">
+  <section class="header">
+    <!-- nav block -->
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li>
+          <a href="" title="IceCream main page"
+            ><img src="./images/hero/logo.png" class="header__logo"
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img
+              src="./images/hero/menu.svg"
+              class="header__menu-image header__menu-image--invisible"
+          /></a>
+        </li>
+        <li>
+          <ul class="header__desktop-menu">
+            <li><a href="" class="header__link">Home</a></li>
+            <li><a href="" class="header__link">About us</a></li>
+            <li><a href="" class="header__link">How it’s made?</a></li>
+            <li><a href="" class="header__link">Our products</a></li>
+            <li><a href="" class="header__link">Contact</a></li>
+          </ul>
+        </li>
+        <li>
+          <button type="button" class="header__button header__button--invisible">Buy now</button>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <section class="hero">
+    <!-- hero H1 title -->
+    <h1 class="hero__title">ice cream made with <span class="hero__title--red">passion</span></h1>
+
+    <!-- links products & how its made -->
+    <ul class="hero__link-list">
+      <li class="hero__link-item">
+        <a href="" class="hero__link hero__link--products" title="Products">Products</a>
+      </li>
+      <li class="hero__button-item">
+        <a href="" class="hero__link hero__link--howmade" title="How it’s made?">How it’s made?</a>
+      </li>
+    </ul>
+
+    <!-- statistic digits -->
+    <ul class="hero__statistic-list hero__statistic-list--invisible">
+      <li class="hero__statistic-item">
+        16
+        <p class="hero__statistic-category hero__statistic-category--right">cafes</p>
+      </li>
+      <li class="hero__statistic-item">
+        23
+        <p class="hero__statistic-category">food trucks</p>
+      </li>
+    </ul>
+
+    <!-- hero text block -->
+    <a href="" title="Lorem ipsum dolor sit amet">
+      <p class="hero__text-block hero__text-block--invisible">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et
+      </p>
+    </a>
+
+    <!-- icecream with ellipse-->
+    <div class="hero__ellipse"></div>
+    <picture>
+      <source
+        srcset="images/hero/icecream-desk.png 1x, images/hero/icecream-desk@2x.png 2x"
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="images/hero/icecream-tab.png 1x, images/hero/icecream-tab@2x.png 2x"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="images/hero/icecream.png 1x, images/hero/icecream@2x.png 2x"
+        media="(min-width:480px)"
+      />
+      <img
+        src="images/hero/icecream.png"
+        class="hero__image hero__image--icecream"
+        alt="icecream"
+        min-width="171px"
+      />
+    </picture>
+    <!-- milk image -->
+
+    <picture>
+      <source
+        srcset="images/hero/milk-desk.png 1x, images/hero/milk-desk@2x.png 2x"
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="images/hero/milk-tab.png 1x, images/hero/milk-tab@2x.png 2x"
+        media="(min-width:768px)"
+      />
+
+      <img src="images/hero/milk-tab.png" class="hero__image hero__image--milk" alt="bio eco" />
+    </picture>
+
+    <!-- girl image -->
+    <picture>
+      <source
+        srcset="images/hero/girl-desk.png 1x, images/hero/girl-desk@2x.png 2x"
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="images/hero/girl-tab.png 1x, images/hero/girl-tab@2x.png 2x"
+        media="(min-width:768px)"
+      />
+
+      <img
+        src="images/hero/girl-tab.png"
+        class="hero__image hero__image--girl"
+        alt="girl with icecream"
+      />
+    </picture>
+  </section>
+</div>
