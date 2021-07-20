@@ -5,8 +5,14 @@
   display: flex;
   flex-direction: column;
   
-  @media screen and (max-width: $desktop-size) {
+  @media screen and (max-width: 767px) {
     width: 234px;
+    
+    
+  }
+  @media screen and (min-width: 768px) {
+    width: 330px;
+    
     
   }
   @media screen and (min-width: $desktop-size){
@@ -80,9 +86,12 @@ fill: #fff;
   height: 32px;
   background-color: $accent-alt-text-color  ;
   border-radius: 50%;
+
+  
 }
 .footer-list__icon:hover{
   background-color: $button-hover-bgc-color;
+  transform: scale(1.5);
 }
 .footer-contact{
   padding-top: 45px;
