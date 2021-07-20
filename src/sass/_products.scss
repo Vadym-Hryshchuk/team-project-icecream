@@ -1,1 +1,204 @@
-// Стили секции Products
+.products__section {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 121px;
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 127px;
+  }
+}
+// .products__title {
+//     margin-top: 157px;
+//   margin-left: auto;
+//   margin-right: auto;
+//     @media screen and (min-width: 768px) {
+//       margin-top: 167px;
+//     }
+//     @media screen and (min-width: 1280px) {
+//       margin-top: 176px;
+//     }
+// }
+.products__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 31px;
+  margin-bottom: 98px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    margin-top: 39px;
+    margin-bottom: 112px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 49px;
+    margin-bottom: 119px;
+  }
+}
+
+.products__item {
+  &:not(:last-child) {
+    margin-bottom: 17px;
+  }
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 20px;
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.products__item__content {
+  text-align: center;
+
+  margin-top: 144px;
+  width: 280px;
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    margin-top: 150px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 330px;
+    margin-top: 210px;
+  }
+  &--pink {
+    background-color: $background-color_ice-cream;
+    border-radius: 24px;
+  }
+  &--yellow {
+    background-color: $background-color_ice-coffee;
+    border-radius: 24px;
+  }
+  &--green {
+    background-color: $background-color_milkshakes;
+    border-radius: 24px;
+  }
+}
+.products___img {
+  position: absolute;
+  z-index: 99;
+  padding-left: 16px;
+  margin-top: 31px;
+  @media screen and (min-width: 768px) {
+    padding-left: 0px;
+    margin-top: 39px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 0px;
+  }
+}
+.products__item__title {
+  font-family: $font-family-title;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+  padding-top: 161px;
+  @media screen and (min-width: 768px) {
+    padding-top: 152px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 163px;
+  }
+}
+.products__item__pseudoelements {
+  display: flex;
+  flex-direction: row;
+  padding-left: 127px;
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    padding-left: 97px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 152px;
+  }
+}
+.products__item__pseudoelement--1::after {
+  position: absolute;
+  content: '';
+  display: block;
+  font-size: 30px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $secondary-text-color;
+}
+.products__item__pseudoelement--2::after {
+  position: absolute;
+  content: '';
+  display: block;
+  font-size: 30px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $secondary-text-color;
+  margin-left: 7px;
+}
+.products__item__pseudoelement--3::after {
+  position: absolute;
+  content: '';
+  display: block;
+  font-size: 30px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $secondary-text-color;
+  margin-left: 14px;
+}
+.products__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  line-height: 152%;
+  letter-spacing: 0.04em;
+  color: $secondary-text-color;
+  width: 200px;
+  height: 124px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    width: 198px;
+    line-height: 176%;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 62px;
+    width: 241px;
+    font-size: 16px;
+    height: 106px;
+  }
+}
+.products__button {
+  border-style: none;
+  margin-bottom: 41px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 50px;
+  }
+  &--pink {
+    background-color: $background-color_ice-cream;
+  }
+  &--yellow {
+    background-color: $background-color_ice-coffee;
+  }
+  &--green {
+    background-color: $background-color_milkshakes;
+  }
+}
