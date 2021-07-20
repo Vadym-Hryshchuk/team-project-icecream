@@ -22,6 +22,11 @@
   padding-bottom: 27px;
 }
 
+.header__team,
+.backdrop--hidden {
+  display: none;
+}
+
 .header__desktop-menu {
   display: none;
 }
@@ -644,6 +649,7 @@
   }
 
   .header__team {
+    display: block;
     position: fixed;
     width: 60px;
     height: 60px;
