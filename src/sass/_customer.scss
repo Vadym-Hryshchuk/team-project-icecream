@@ -114,29 +114,6 @@
       top: -15px;
     }
   }
-
-  &::after {
-    position: absolute;
-    left: 50%;
-    bottom: -54px;
-
-    transform: translateX(-50%);
-
-    content: '';
-    display: inline-block;
-    width: 32px;
-    height: 4px;
-    background-image: url(../images/customer-reviews/dots.png);
-
-    @media screen and (min-width: $tablet-size) {
-      left: 250px;
-      bottom: -56px;
-    }
-    @media screen and (min-width: $desktop-size) {
-      left: 404px;
-      bottom: -51px;
-    }
-  }
 }
 
 .customer-reviews__text-about {
@@ -157,6 +134,29 @@
   }
   @media screen and (min-width: $desktop-size) {
     font-size: 20px;
+  }
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    top: -22px;
+
+    transform: translateX(-50%);
+
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 4px;
+    background-image: url(../images/customer-reviews/customer-dot.svg),
+      url(../images/customer-reviews/customer-dot.svg),
+      url(../images/customer-reviews/customer-dot.svg);
+
+    background-position: left, center, right;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 768px) {
+      top: -19px;
+    }
   }
 
   &::after {
