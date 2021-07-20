@@ -1,6 +1,4 @@
-// Стили секции Footer
-
-.footer{
+.footer {
   background: #FFF5F6;
 }
 .footer-wrapper-title{
@@ -61,16 +59,6 @@ margin-top: 165px;
         margin-top: 15px;
     }
 }
-// .footer-wrapper{
-//   display: flex;
-//   flex-direction: column;
-  
-//   @media screen and (max-width: $desktop-size) {
-//     width: 234px;
-    
-//   }
-// }
-
 
 .footer-list{
   display: flex;
@@ -82,12 +70,7 @@ margin-top: 165px;
 }
 
 .footer-icon{
-  // width: 32px;
-  // height: 32px;
-  fill: #fff;
-  // background-color: $accent-alt-text-color;
-  
- 
+fill: #fff;
 }
 .footer-list__icon{
   display: flex;
@@ -130,7 +113,7 @@ margin-top: 165px;
   font-weight: bold;
   font-size: 12px;
   line-height: 186%;
- 
+
   text-align: right;
   
   color: $accent-text-color;
@@ -153,8 +136,7 @@ margin-top: 165px;
   letter-spacing: 0.02em;
   
   color: $alt-text-color;
- text-align: center;
- 
+text-align: center;
 width: 150px;
 padding-top: 22px;
 padding-bottom: 25px;
