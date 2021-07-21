@@ -91,7 +91,8 @@ fill: #fff;
 }
 .footer-list__icon:hover{
   background-color: $button-hover-bgc-color;
-  transform: scale(1.5);
+  transform: scale(1.5) ;
+  transition-duration: 500ms;
 }
 .footer-contact{
   padding-top: 45px;
