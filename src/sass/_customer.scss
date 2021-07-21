@@ -158,22 +158,4 @@
       top: -19px;
     }
   }
-
-  &::after {
-    content: '';
-
-    position: absolute;
-    left: 50%;
-    bottom: -42px;
-    transform: translateX(-50%);
-
-    display: inline-block;
-    width: 73px;
-    height: 12px;
-    background-image: url(../images/customer-reviews/home-dots.png);
-
-    @media screen and (min-width: $tablet-size) {
-      bottom: -47px;
-    }
-  }
 }
