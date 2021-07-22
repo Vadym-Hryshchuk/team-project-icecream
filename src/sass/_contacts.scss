@@ -191,6 +191,7 @@ margin-right: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   &::after {
     content: '';
     width: 8px;
